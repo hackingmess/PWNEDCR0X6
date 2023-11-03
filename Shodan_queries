@@ -1,0 +1,91 @@
+
+** Add the filter country:"CR" fo filter only results from Costa Rica 🇨🇷 **
+
+Files & directories 
+
+1. http.title:”Index of /” – open lists of files and directories on various servers.
+2. port:80 title:”Index of /” – slight variation of the above, note how the results might differ.
+3. “220” “230 Login successful.” port:21 – FTP resources potentially accessible without login credentials.
+4. 230 ‘anonymous@’ login ok – anonymous login allowed to FTP resources.
+5. “Anonymous+access+allowed” port:”21″ – as above.
+6. vsftpd 2.3.4 – legacy Linux based FTP service with a widely known security vulnerability
+7. ftp port:”10000″ – Network Data Management Protocol (NDMP), used for backup of network-attached storage (NAS) devices.
+8. “Authentication: disabled” port:445 product:”Samba” – SMB file sharing
+9. “QuickBooks files OverNetwork” -unix port:445 – default settings for sharing QuickBooks files.
+10. filezilla port:”21″ – popular file sharing software Filezilla.
+
+Webcam searches
+
+1. title:camera – general search for anything matching the “camera” keyword.
+2. webcam has_screenshot:true – a general search for any IoT device identified as a webcam that has screenshots available.
+3. has_screenshot:true IP Webcam – another version of the above search, see how the results might differ?
+4. server: webcampxp – webcamXP is one of the most popular and commonly encountered network camera software for Windows OS. 
+5. server: “webcam 7” – webcam 7 cameras; not as popular as the above type, but still they are still popular and encountered out there.
+6. title:”blue iris remote view” – webcams identified as belonging to the Blue Iris webcam remote management and monitoring service.
+7. title:”ui3 -“ – UI3 is a  HTML5 web interface for Blue Iris mentioned above.
+8. title:”Network Camera VB-M600″ – Canon manufactured megapixel security cameras.
+9. product:”Yawcam webcam viewer httpd” – Yawcam stands for Yet Another WebCAM, free live streaming and webcam software.
+10. title:”IPCam Client” – IPCam Client webcam devices.
+11.server: GeoHttpServer – GeoVision (GeoHttpServer) Webcams, older webcam software with some had well documented vulnerabilities.
+12.server: VVTK-HTTP-Server – Vivotek IP cameras.
+13. title:”Avigilon” – access to the Avigilion brand camera and monitoring devices.
+14. ACTi – various IP camera and video management system products.
+15. WWW-Authenticate: “Merit LILIN Ent. Co., Ltd.” – a UK-based house automation / IP camera provider.
+16. title:”+tm01+” – unsecured Linksys webcams, a lot of them with screenshots.
+17. server: “i-Catcher Console” – another example of an IP-based CCTV system.
+18. Netwave IP Camera Content-Length: 2574 – access to the Netwave make IP cameras.
+19. 200 ok dvr port:”81″ – DVR CCTV cameras accessible via http.
+20 WVC80N – Linksys WVC80N cameras.
+
+Database searches
+
+1. product:MySQL – broad search for MySQL databases.
+2. mongodb port:27017 – MongoDB databases on their default port. Unsecured by default.
+3. “MongoDB Server Information” port:27017 – another variation of the above search.
+4. “MongoDB Server Information { “metrics”:” – fully open MongoDBs.
+5. “Set-Cookie: mongo-express=” “200 OK” – MongoDB open databases.
+6. kibana content-length:217 – Kibana dashboards accessible without authentication.
+7. port:”9200″ all:elastic – Elasticsearch open databases.
+8. port:5432 PostgreSQL – remote connections to PostgreSQL servers.
+9. product:”CouchDB” – Apache CouchDB databases listed.
+10. port:”5984″+Server: “CouchDB/2.1.0” – vulnerable CouchDB where remote code execution may be possible.
+
+VOIP communication devices
+
+1. device:”voip” – general search for Voice over IP devices.
+2. device:”voip phone” – more specific search for anything VoIP containing a “phone” keyword.
+3. server: snom – Snom is a VoIP provider with some legacy devices online.
+4. “snom embedded 200 OK” – Snom devices with enabled authentication.
+5. AddPac – an older VoIP provider, nearly exclusively legacy devices.
+6. mcu: tandberg – Tandberg is a hardware manufacturer of multi-point control units for video conferencing.
+7. title:”polycom” – Polycom is another VoIP communication brand.
+8. title:”openstage” – Siemens Openstage brand IP phones.
+9. Server: MSOS/2.0 mawebserver/1.1 – VoIP media gateway, commonly used by services such as Patton SN4112 FXO.
+
+Legacy Windows operating systems
+
+1. os:”Windows 5.0″ – Windows 2000; support ended in 2010.
+2. os:”Windows 5.1″ – Windows XP; support ended in 2014.
+3. os:Windows 2003 – Windows Server 2003; support ended in 2015.
+4. os:”Windows Vista”– Windows Vista; support ended in 2017.
+5. os:Windows 2008 – Windows Server 2008; support ended in 2020.
+6. os:”Windows 7″ – Windows 7; support ended in 2020.
+7. os:”Windows 8″ – Windows 8; support ended in 2016.
+8. os:Windows 2011 – Windows Home Server 2011; support ended in 2016.
+9. os:”Windows 8.1″ – Windows 8.1; support ended in 2018.
+10. os:Windows 2012 – Windows Server 2012; support ended in 2018.
+
+
+Default / generic credentials
+
+1. admin 1234 – basic very unsecure credentials.
+2. “default password” – speaks for itself…
+3. test test port:”80″ – generic test credentials over HTTP.
+4. “authentication disabled” “RFB 003.008” – no authentication necessary.
+5. “root@” port:23 -login -password -name -Session – accounts already logged in with root privilege over Telnet, port 23.
+6. port:23 console gateway – remote access via Telnet, no password required.
+7. html:”def_wirelesspassword” – default login pages for routers.
+8. “polycom command shell” – possible authentication bypass to Polycom devices.
+9. “authentication disabled” port:5900,5901 – VNC services without authentication.
+10. “server: Bomgar” “200 OK” – Bomgar remote support service.
+
